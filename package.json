@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-form-data",
+  "version": "1.0.0",
+  "description": "\"Work with from data in nodejs e.g files etc\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forhad-h/nodejs-form-data.git"
+  },
+  "author": "Forhad Hosain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forhad-h/nodejs-form-data/issues"
+  },
+  "homepage": "https://github.com/forhad-h/nodejs-form-data#readme"
+}
