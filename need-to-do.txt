@@ -1,0 +1,6 @@
+# make button to edit
+# make button to delete
+# support multiple file upload
+# support others file type e.g video, audio
+# prevent input validation attack
+# make the design more attractive
