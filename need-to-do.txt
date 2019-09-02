@@ -4,3 +4,4 @@
 # support others file type e.g video, audio
 # prevent input validation attack
 # make the design more attractive
+# make image name unique
