@@ -18,8 +18,7 @@ require('./sqlite3/create')('form_data')
 
 const server = http.createServer((req, res) => {
   const isPngFile = /.png$/.test(req.url)
-  const isJpgFile = /.jpg$/.test(req.url)
-  const isJpegFile = /.jpeg$/.test(req.url)
+  const isJpegFile = /.jpg$/.test(req.url) || /.jpeg$/.test(req.url)
   const isGifFile = /.gif$/.test(req.url)
 
   if (req.url === '/') {
@@ -45,8 +44,6 @@ const server = http.createServer((req, res) => {
     var fileStream = fs.createReadStream(imagePath)
     if (isPngFile) {
       res.writeHead(200, { 'Content-Type': `image/png` })
-    } else if (isJpgFile) {
-      res.writeHead(200, { 'Content-Type': `image/jpg` })
     } else if (isJpegFile) {
       res.writeHead(200, { 'Content-Type': `image/jpeg` })
     } else if (isGifFile) {
