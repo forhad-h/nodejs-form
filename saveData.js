@@ -1,7 +1,7 @@
 const formidable = require('formidable')
 const path = require('path')
 const fs = require('fs')
-const insertData = require('./sqlite3/insert')
+const insertData = require('./sqlite3/insertFormData')
 const { exec } = require('child_process')
 
 module.exports = (req, res) => {

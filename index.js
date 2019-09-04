@@ -3,19 +3,18 @@ const _ = require('lodash')
 const Handlebars = require('handlebars')
 const fs = require('fs')
 const path = require('path')
-const db = require('./sqlite3/db')
 
 //form
 const saveData = require('./saveData')
 const htmlForm = require('./views/form/form')
 const formTemplate = Handlebars.compile(htmlForm)
-const getFormData = require('./sqlite3/get')
+const getFormData = require('./sqlite3/getAllData')
 
 //list
 const list = require('./views/list/list')
 const listTemplate = Handlebars.compile(list)
 
-require('./sqlite3/create')('form_data')
+require('./sqlite3/createTable')('form_data')
 
 const server = http.createServer((req, res) => {
   const isPngFile = /.png$/.test(req.url)
