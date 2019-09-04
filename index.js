@@ -14,7 +14,12 @@ const getFormData = require('./sqlite3/getAllData')
 const list = require('./views/list/list')
 const listTemplate = Handlebars.compile(list)
 
-require('./sqlite3/createTable')('form_data')
+const formDataFields = `
+  title text,
+  description text,
+  file_path text
+`
+require('./sqlite3/createTable')('form_data', formDataFields)
 
 const server = http.createServer((req, res) => {
   const isPngFile = /.png$/.test(req.url)
