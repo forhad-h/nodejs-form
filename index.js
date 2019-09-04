@@ -3,6 +3,7 @@ const _ = require('lodash')
 const Handlebars = require('handlebars')
 const fs = require('fs')
 const path = require('path')
+const db = require('./sqlite3/db')
 
 //form
 const saveData = require('./saveData')
@@ -39,7 +40,7 @@ const server = http.createServer((req, res) => {
       })
       .catch(err => console.log(err))
   }
-  if (isPngFile || isJpgFile || isJpegFile || isGifFile) {
+  if (isPngFile || isJpegFile || isGifFile) {
     const imagePath = path.join(__dirname, req.url)
     var fileStream = fs.createReadStream(imagePath)
     if (isPngFile) {
