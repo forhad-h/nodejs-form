@@ -13,9 +13,9 @@
   "author": "Forhad Hosain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/forhad-h/nodejs-form-data/issues"
+    "url": "https://github.com/forhad-h/nodejs-form/issues"
   },
-  "homepage": "https://github.com/forhad-h/nodejs-form-data#readme",
+  "homepage": "https://github.com/forhad-h/nodejs-form#readme",
   "dependencies": {
     "formidable": "^1.2.1",
     "handlebars": "^4.1.2",
